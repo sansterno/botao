@@ -41,7 +41,7 @@
 
   <script>
     const imagemInicial = 'lula.jpg';
-    const novaImagem = 'jair_bolsonaro-2.webp';
+    const novaImagem = 'unnamed.jpg';
 
     function trocarImagem() {
       const imagem = document.getElementById('imagem');
