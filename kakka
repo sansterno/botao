@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trocar e Voltar Imagem</title>
+  <style>
+    body {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+      background-color: #f4f4f9;
+    }
+    img {
+      width: 300px;
+      height: auto;
+      margin-bottom: 20px;
+    }
+    button {
+      background-color: red;
+      color: white;
+      border: none;
+      padding: 15px 30px;
+      font-size: 18px;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+    button:hover {
+      background-color: darkred;
+    }
+  </style>
+</head>
+<body>
+  <img id="imagem" src="lula.jpg" alt="Imagem Inicial">
+
+  <button onclick="trocarImagem()">Trocar Voto</button>
+
+  <script>
+    const imagemInicial = 'lula.jpg';
+    const novaImagem = 'jair_bolsonaro-2.webp';
+
+    function trocarImagem() {
+      const imagem = document.getElementById('imagem');
+
+      if (imagem.src = imagemInicial) {
+        imagem.src = novaImagem;
+      } else {
+        imagem.src = imagemInicial;
+      }
+      
+    }
+  </script>
+</body>
+</html>
